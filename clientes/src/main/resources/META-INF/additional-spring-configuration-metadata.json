@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "security.ignored",
+    "type": "java.lang.String",
+    "description": "A description for 'security.ignored'"
+  },
+  {
+    "name": "security.basic.enable",
+    "type": "java.lang.String",
+    "description": "A description for 'security.basic.enable'"
+  },
+  {
+    "name": "security.jwt.signing-key",
+    "type": "java.lang.String",
+    "description": "A description for 'security.jwt.signing-key'"
+  }
+]}
