@@ -11,7 +11,7 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import io.github.matheusascencio.clientes.service.UsuarioService;
+import io.github.matheusascencio.clientes.rest.service.UsuarioService;
 
 
 @EnableWebSecurity

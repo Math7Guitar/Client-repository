@@ -8,7 +8,8 @@ import com.ibm.icu.math.BigDecimal;
 
 import lombok.Data;
 
-@Entity@Data
+@Entity
+@Data
 public class Servico {
     
     @Id
@@ -27,18 +28,4 @@ public class Servico {
 
     @Column
     private LocalDate data;
-
-    //Getters
-    public Integer getId() { return this.id; }
-    public String getDescricao() { return this.descricao; }
-    public Cliente getCliente() { return this.cliente; }
-    public BigDecimal getValor() { return this.valor; }
-    public LocalDate getData() { return this.data; }
-
-    //Setters
-    public void setId(Integer id) { this.id = id; }
-    public void setDescricao(String d) { this.descricao = d; }
-    public void setCliente(Cliente cli) { this.cliente = cli; }
-    public void setValor(BigDecimal v) { this.valor = v; }
-    public void setData(LocalDate data) { this.data = data; }
 }

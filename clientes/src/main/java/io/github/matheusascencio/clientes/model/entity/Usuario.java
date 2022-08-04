@@ -8,10 +8,9 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotEmpty;
 
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@Entity @Data
-@NoArgsConstructor
+@Entity
+@Data
 public class Usuario {
     
     @Id
@@ -25,15 +24,4 @@ public class Usuario {
     @Column(name = "password")
     @NotEmpty(message = "{ campo.senha.obrigatorio }")
     private String password;
-
-
-    //Getters
-    public Integer getId() { return this.id; }
-    public String getUsername() { return this.username; }
-    public String getPassword() { return this.password; }
-
-    //Setters
-    public void setId(Integer id) { this.id = id; }
-    public void setUsername(String u) { this.username = u; }
-    public void setPassword(String password) { this.password = password; }
 }

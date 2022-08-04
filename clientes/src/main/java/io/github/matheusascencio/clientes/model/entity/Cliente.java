@@ -8,15 +8,13 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 import org.hibernate.validator.constraints.br.CPF;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.Data;
+
 
 import java.time.LocalDate;
 
 @Entity
-@AllArgsConstructor @NoArgsConstructor
-@Builder
+@Data
 public class Cliente {
     
     @Id
@@ -41,15 +39,4 @@ public class Cliente {
         setDataCadastro(LocalDate.now());
     }
 
-    //Getters
-    public Integer getId() { return this.id; }
-    public String getNome() { return this.nome; }
-    public String getCpf() { return this.cpf; }
-    public LocalDate getDataCadastro() { return this.dataCadastro; }
-
-    //Setters
-    public void setId(Integer id) { this.id = id; }
-    public void setNome(String n) { this.nome = n; }
-    public void setCpf(String cpf) { this.cpf = cpf; }
-    public void setDataCadastro(LocalDate data) { this.dataCadastro = data; }
 }
